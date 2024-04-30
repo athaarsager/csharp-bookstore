@@ -74,4 +74,21 @@ public class BookController : ControllerBase
         return Ok(UpdatedBook);
     }
 
+    [HttpDelete("{BookId}")] // Delete a book
+
+    public IActionResult DeleteBook(int BookId)
+    {
+        Book Book = context.Book.Find(BookId);
+
+        if (Book is null)
+        {
+            return NotFound();
+        }
+        
+        context.Book.Remove(Book);
+        context.SaveChanges();
+
+        return NoContent();
+    }
+
 }
