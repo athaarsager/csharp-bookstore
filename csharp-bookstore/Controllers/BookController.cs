@@ -58,4 +58,20 @@ public class BookController : ControllerBase
         return CreatedAtAction(nameof(GetBook), new { Id = Book.Id}, Book);
     }
 
+    [HttpPut("{BookId}")] // Edit a book
+
+    public IActionResult EditBook(int BookId, Book Book)
+    {
+        if (BookId != Book.Id)
+        {
+            return BadRequest();
+        }
+
+        context.Book.Update(Book);
+        context.SaveChanges();
+
+        Book UpdatedBook = context.Book.Find(BookId);
+        return Ok(UpdatedBook);
+    }
+
 }
