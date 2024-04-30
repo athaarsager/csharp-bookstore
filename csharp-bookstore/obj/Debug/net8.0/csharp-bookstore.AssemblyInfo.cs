@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csharp-bookstore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9805d708918ede87c64fa7c9881fe6f518d4dd90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98f91f6cf81b371c9b8ea4ff655bc9eb7aa4e7e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("csharp-bookstore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csharp-bookstore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
